@@ -10,7 +10,7 @@ npm i -S lamernews-client
 
 # Usage
 
-The example shown below will post some news to a LamerNews-powered site.
+The example shown below will post some news to a LamerNews-powered site, and remove them afterwards.
 
 ```js
 var lamer = require('lamernews-client');
