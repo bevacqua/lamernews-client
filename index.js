@@ -70,8 +70,9 @@ function createClient (o) {
   }
 
   function submit (data, done) {
-    data.news_id = -1;
-    data.text = '';
+    if (!data.news_id) { data.news_id = -1; }
+    if (!data.url) { data.url = '' }
+    if (!data.text) { data.text = ''; }
     post('/api/submit', data, done);
   }
 
