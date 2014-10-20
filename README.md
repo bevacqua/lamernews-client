@@ -25,11 +25,14 @@ function logged () {
   client.submit({
     title: 'testing lamernews-client!',
     url: 'https://github.com/bevacqua/lamernews-client'
-  }, done);
+  }, remove);
+}
+
+function remove (err, data) {
+  client.remove(data, done);
 }
 
 function done (err) {
-  console.log(err);
   t.end();
 }
 ```

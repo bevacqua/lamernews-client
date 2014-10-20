@@ -75,6 +75,10 @@ function createClient (o) {
     post('/api/submit', data, done);
   }
 
+  function remove (data, done) {
+    post('/api/delnews', data, done);
+  }
+
   return {
     login: login,
     submit: submit
