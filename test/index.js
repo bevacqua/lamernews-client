@@ -26,3 +26,14 @@ test(function (t) {
     t.end();
   }
 });
+
+test(function (t) {
+  var client = lamer.createClient({ api: 'http://www.echojs.com' });
+
+  client.list({}, listed);
+
+  function listed (err, body) {
+    console.log(err, body);
+    t.end();
+  }
+});

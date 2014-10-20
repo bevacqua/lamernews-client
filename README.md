@@ -37,6 +37,20 @@ function done (err) {
 }
 ```
 
+Just want a list of new articles posted on EchoJS?
+
+```js
+var lamer = require('lamernews-client');
+var client = lamer.createClient({ api: 'http://www.echojs.com' });
+
+client.list({}, listed);
+
+function listed (err, body) {
+  console.log(err, body);
+  t.end();
+}
+```
+
 # License
 
 MIT

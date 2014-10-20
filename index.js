@@ -80,9 +80,19 @@ function createClient (o) {
     post('/api/delnews', data, done);
   }
 
+  function list (data, done) {
+    var p = [
+      data.sort || 'latest',
+      data.start || 0,
+      data.count || 30
+    ];
+    get('/api/getnews/' + p.join('/'), data, done);
+  }
+
   return {
     login: login,
-    submit: submit
+    submit: submit,
+    list: list
   };
 }
 
