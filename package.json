@@ -1,0 +1,30 @@
+{
+  "name": "lamernews-client",
+  "version": "1.0.0",
+  "description": "A simple Node.js client to the LamerNews API",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test/*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bevacqua/lamernews-client.git"
+  },
+  "keywords": [
+    "lamernews"
+  ],
+  "author": "Nicolas Bevacqua <nicolasbevacqua@gmail.com> (http://bevacqua.io/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bevacqua/lamernews-client/issues"
+  },
+  "homepage": "https://github.com/bevacqua/lamernews-client",
+  "dependencies": {
+    "contra": "^1.6.10",
+    "request": "^2.45.0",
+    "tough-cookie": "^0.12.1"
+  },
+  "devDependencies": {
+    "tape": "^3.0.1"
+  }
+}
